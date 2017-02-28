@@ -1,3 +1,4 @@
+#ex) 9 multiply using 'for' loop
 for i in range(2, 10):
 	print("=======================")
 
