@@ -2,6 +2,7 @@
 # student 1 = chemistry score of 90, english = --, chinese = --
 # finish all 3 student
 
+# defined student scores with dictionary
 student1_score = {
 	'Chem':95,
 	'Eng':100,
@@ -23,6 +24,7 @@ student3_score = {
 # students_score = [student1_score, student2_score, student3_score]
 # print(students_score)
 
+# Linked names with the student scores
 students_dict = {
 	'Brian': student1_score,
 	'Alex': student2_score,
@@ -35,8 +37,9 @@ eng_max = 0
 chem_max = 0
 avg_max = 0
 
+# the "keys" brings the values associated with the aforementioend variable (the names) and s is assigned to the values in the names.
 for x in students_dict.keys():
-	s = students_dict[x
+	s = students_dict[x]
 
 	if s['Eng'] > eng_max:
 		eng_max = s['Eng']
