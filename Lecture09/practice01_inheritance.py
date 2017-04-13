@@ -28,14 +28,23 @@ class IntSet(object):
 		return '{' + ",".join(str(x) for x in self.vals) + '}'
 
 
+class IntSet2(IntSet):
+	def __init__(self):
+		super(self.__class__, self).__init__()
+		self.vals2 = []
+
+	def __str__(self):
+		self.vals.sort()
+		return '{' + ",".join(str(x) for x in self.vals) + '}'
+
 intSet1 = IntSet()
 intSet1.insert(3)
 intSet1.insert(4)
 intSet1.insert(5)
 print(intSet1)
 
-intSet2 = IntSet()
-intSet1.insert(9)
-intSet1.insert(4)
-intSet1.insert(5)
-print(intSet1)
+intSet2 = IntSet2()
+intSet2.insert(9)
+intSet2.insert(7)
+intSet2.insert(8)
+print(intSet2)
